@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let person = {
+      firstName: "chauhan",
+      lastName: "shubham",
+      age: 19,
+      job: "Developer",
+      hobbies: [
+        "reading",
+        "coding"
+      ]
+    };
+    //add data
+    person.country = "indian";
+    person.email = "shubhamvavdi@gmail.com";
+    console.log(person);
+
+    //Remove Data
+    let perso = {
+      firstName: "sarviya",
+      lastName: "rahul",
+      age: 20,
+      job: "Developer",
+      hobbies: ["reading", "gaming", "coding"],
+
+    };
+    delete perso.job;
+    delete perso.hobbies;
+    console.log(perso)
+
+    //Get All Keys
+    let j = {
+      firstName: "makvana",
+      lastName: "manoj",
+      age: 30,
+      job: "Developer",
+      hobbies: ["reading",],
+    };
+    let keys = Object.keys(j);
+    console.log(keys)
+
+    //Get All Values
+    const s = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 30,
+      job: "Developer",
+      hobbies: ["reading", "gaming", "coding"],
+    };
+
+    const values = Object.values(s)
+    console.log(values);
+
+    //All Data Get
+    let sj = {
+      name: 'princ',
+      age: 30,
+      occupation: 'Developer'
+    };
+
+    for (let key in sj) {
+      console.log(key + ": " + sj[key]);
+    }
+
+  </script>
+</body>
+
+</html>
